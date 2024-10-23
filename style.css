@@ -264,8 +264,8 @@ footer{
     font-size: 16px;
 }
 
-.p-foots{
-    max-width: 50%;
+.p-foot{
+    width: 50%;
 }
 
  @font-face {
@@ -280,18 +280,25 @@ footer{
     font-weight: 400;
  }
 
+@media screen and (max-width: 1020px) {
+    .flex-row {
+        flex-direction: column;
+    }
+    
+}
+
  @media screen and (max-width: 930px) {
     .nav-links {
         position: absolute;
         right: 0;
         height: 25vh;
         top: 17vh;
-        padding: 10px;
+        padding: 10px 30px 0 0;
         background-color:rgb(255, 240, 219);
         display: flex;
         flex-direction: column;
         align-items: end;
-        width: 25%;
+        width: 35%;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
         font-family: Oxanium;
@@ -321,6 +328,14 @@ footer{
         max-width: none;
     }
 
+    .flex-row{
+        flex-direction: column;
+    }
+
+    .p-foot div{
+        max-width: 200px;
+    }
+
     @media screen and (max-width: 500px) {
     
     .main-gallery {
@@ -329,6 +344,11 @@ footer{
 
     .logo{
         max-width: 50%;
+    }
+
+    .img-one{
+        width: 250px;
+        height: 350px;
     }
         
     }
