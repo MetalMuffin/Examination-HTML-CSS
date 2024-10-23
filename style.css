@@ -318,6 +318,7 @@ footer{
 
     .flex div{
         padding: 20px;
+        max-width: none;
     }
 
     @media screen and (max-width: 500px) {
