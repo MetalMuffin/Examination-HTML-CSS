@@ -264,10 +264,6 @@ footer{
     font-size: 16px;
 }
 
-.p-foot{
-    width: 50%;
-}
-
  @font-face {
     font-family: "Oxanium";
     src: url(./Fonts/Oxanium-Regular.ttf);
@@ -332,10 +328,6 @@ footer{
         flex-direction: column;
     }
 
-    .p-foot div{
-        max-width: 200px;
-    }
-
     @media screen and (max-width: 500px) {
     
     .main-gallery {
@@ -350,6 +342,22 @@ footer{
         width: 250px;
         height: 350px;
     }
+
+    .nav-links{
+        width: 40%;
+        padding: 10px 10px 0 0;
+    }
+        
+    }
+
+    @media screen and (max-width:440px) {
+        footer{
+            flex-direction: column;
+        }
+
+        .flex-row{
+            width: 100%;
+        }
         
     }
 
