@@ -1,0 +1,343 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 10px;
+    background-color: rgb(255, 240, 219);
+    max-width: 1400px;
+    
+}
+
+header{
+    padding: 15px;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+}
+
+header img{
+    max-width: 100%; 
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 240, 219);
+    font-family: Oxanium;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.nav-links{
+    list-style: none;
+}
+
+.nav-links li{
+    display: inline-block;
+    padding: 10px;
+}
+
+i{
+    padding-right: 6px;
+}
+
+.nav-links a{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.active-side{
+    border: 1px solid #121111;
+    border-radius: 4%;
+}
+
+.burger{
+    display: none;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 20px;
+    align-items: center;
+}
+
+.flex div{
+    max-width: 50%;
+    padding: 20px;
+}
+
+.img-one{
+    max-width: 500px;
+    object-fit: cover;
+    border-radius: 4%;
+    max-height: 600px;
+}
+
+.text-container{
+    max-width: 100%;
+    font-family: montserrat;
+}
+
+.text-container p{
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 20px;
+    border: 2px double burlywood;
+    border-radius: 4%
+}
+
+.picture-box{
+    max-width: 1400px;
+    display: flex;
+    text-align: center;
+    gap: 5px;
+    margin-top: 50px;
+    font-family: Danfo;
+    font-size: 20px;
+}
+
+.picture-box img{
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 4%;
+}
+
+.picture-box div{
+    max-width: 33%;
+}
+
+/* Tidslinje */
+
+.timeline{
+    display: flex;
+    justify-content: center;
+    max-width: 1400px;
+    margin-top: 60px;
+}
+
+.timeline img{
+    width: 100%;
+}
+
+/* Kontakt */
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  input[type=email], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  input[type=tel], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #d6933c;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #64c540;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    background-color: #ebd6ba;
+    padding: 20px;
+    font-family: Montserrat;
+    max-width: 60%;
+  }
+
+  legend{
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 0;
+  }
+
+  h2{
+    font-family: Oxanium;
+    padding: 20px 0;
+  }
+
+/* Bildgalleri */
+.main-gallery{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-grow: 1;
+
+}
+
+div.gallery{
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4%;
+    width: 180px;
+    font-family: montserrat;
+}
+  
+div.gallery:hover{
+    border: 1px solid #777;
+    border-radius: 4%;
+}
+  
+div.gallery img {
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 4%;
+}
+  
+div.desc {
+    padding: 15px;
+    text-align: center;
+    min-height: 70px;
+}
+
+footer{
+    padding: 25px 0;
+    height: auto;
+    margin-top: 50px;
+    font-family: Montserrat;
+    font-weight: 200;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+}
+
+
+.footer-links{
+    color: black;
+    list-style: none;
+    padding: 15px;
+}
+
+.footer-links a{
+    color: #121111;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.p-foots{
+    max-width: 50%;
+}
+
+ @font-face {
+    font-family: "Oxanium";
+    src: url(./Fonts/Oxanium-Regular.ttf);
+    font-weight: 400;
+ }
+
+ @font-face {
+    font-family: "Danfo";
+    src: url(./Fonts/Danfo-Regular.ttf);
+    font-weight: 400;
+ }
+
+ @media screen and (max-width: 930px) {
+    .nav-links {
+        position: absolute;
+        right: 0;
+        height: 25vh;
+        top: 17vh;
+        padding: 10px;
+        background-color:rgb(255, 240, 219);
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        width: 25%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        font-family: Oxanium;
+    }
+
+    .nav-links li {
+        opacity: 0;
+    }
+
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav-active {
+        transform: translateX(0);
+    }
+
+    .flex {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    @media screen and (max-width: 500px) {
+    
+    .main-gallery {
+        flex-direction: column;
+    }
+
+    .logo{
+        max-width: 50%;
+    }
+        
+    }
+
+    @keyframes navLinkFade {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    .nav-links li {
+        animation: navLinkFade 0.5s ease forwards 0.5s;
+    }
+}
